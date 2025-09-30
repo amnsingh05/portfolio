@@ -1,0 +1,164 @@
+/* ========== Global Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== Header / Intro ========== */
+header {
+  background: linear-gradient(135deg, #0077ff, #00c6ff);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header .intro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header h1 span {
+  color: #ffea00;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ========== Sections ========== */
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0077ff;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0077ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ========== Skills ========== */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  list-style: none;
+}
+
+#skills li {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+#skills li:hover {
+  transform: translateY(-3px);
+  background: #0077ff;
+  color: #fff;
+}
+
+/* ========== Projects ========== */
+.project-card {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #0077ff;
+}
+
+/* ========== Achievements ========== */
+#achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+#achievements li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 12px 18px;
+  border-left: 4px solid #0077ff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+@keyframes popOut {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}

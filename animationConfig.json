@@ -1,0 +1,9 @@
+{
+  "photoAnimation": {
+    "selector": "#profile-pic",
+    "duration": "1s",
+    "timingFunction": "ease-out",
+    "delay": "0s",
+    "animationName": "popOut"
+  }
+}
